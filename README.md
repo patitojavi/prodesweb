@@ -74,7 +74,7 @@ Este será por tanto su menú de navegación donde cada opción lo llevará a un
 
 - En el área de Texto al enviar la Entrega 1 deberán escribir:
  - Nombre de los dos integrantes del equipo.
- - Acceso a Pillan desde ambas cuentas. (http://pillan.inf.....)
+ - Acceso a Pillan desde ambas cuentas. (https://pillan.inf.uct.cl/~.....)
 
 ## Evaluación
 Se evaluarán dos partes: el sitio en producción con todos los requisitos (40%) y una presentación/defensa oral (60%).
