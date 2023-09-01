@@ -1,0 +1,58 @@
+body {
+    background: #b9b9b9;
+    margin: 0; /* Elimina el margen predeterminado del cuerpo */
+    padding: 0; /* Elimina el relleno predeterminado del cuerpo */
+    margin-top: 0; /* Elimina el margen superior */
+}
+
+.navegacion {
+    width: 100%; /* Cambia el ancho fijo a 100% */
+    background: #4e4e4e;
+}
+
+.navegacion ul {
+    list-style: none;
+    padding: 0; /* Elimina el relleno predeterminado de la lista */
+    margin: 0;
+    text-align: right; 
+}
+
+.menu > li {
+    position: relative;
+    display: inline-block;
+
+}
+
+.menu > li > a {
+    display: block;
+    padding: 20px 20px;
+    color: #ffffff;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-decoration: none;
+}
+
+.menu li a:hover {
+    color: rgb(3, 3, 3);
+    transition: all .3s;
+}
+
+.submenu {
+    position: absolute;
+    background: #00000033;
+    width: 100%;
+    visibility: hidden;
+    transition: opacity 1.5s;
+}
+
+.submenu li a {
+    display: block;
+    padding: 15px;
+    color: rgb(255, 255, 255);
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-decoration: none;
+}
+
+.menu li:hover .submenu {
+    visibility: visible;
+    opacity: 1;
+}
