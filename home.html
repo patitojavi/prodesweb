@@ -3,6 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name = robots content = "index, follow">
+    <meta name="description" content="Mantención de PC y servicios relacionados">
     <title>Mantención de PC</title>
     <link rel="stylesheet" type="text/css" href="css/styles.css">
 </head>
@@ -88,15 +90,19 @@
     </section>
 
     <section id="contacto">
-        <h1>Contacto</h1>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam in justo eget arcu cursus bibendum. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Phasellus viverra lacinia ligula, eu fringilla metus efficitur eu. Quisque tristique consequat augue, eget laoreet lorem iaculis eu. Curabitur malesuada nulla in tortor condimentum, id lacinia arcu placerat. Sed id justo justo. Etiam convallis euismod facilisis. Pellentesque hendrerit risus non neque vehicula, eget bibendum velit finibus. Vivamus eget urna ac erat luctus cursus vel eu justo.
-
-            Sed gravida quam vel tortor sodales, in pharetra metus dignissim. Nam auctor libero vel neque fermentum lacinia. Integer hendrerit sem quis dolor venenatis, ac suscipit turpis vulputate. Cras aliquet non enim vel laoreet. Donec ut quam eu enim tincidunt sodales ut ac tellus. Sed non libero nec quam ullamcorper tristique. Maecenas sit amet libero eget dolor hendrerit vehicula. Ut a justo non dolor fermentum vehicula. Aenean malesuada nec arcu in ultricies. Integer id risus ut mi pharetra egestas.
+        <h2>Contacto</h2>
+        <form action="#" method="post">
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" name="nombre" required>
             
-            Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Sed sed tincidunt risus. Nam sodales tortor at risus tincidunt, id blandit purus laoreet. Praesent sit amet luctus sapien. In quis lectus in dolor gravida tincidunt sed in urna. Duis auctor tristique odio, nec aliquet lorem viverra a. Fusce nec tristique libero, eget malesuada augue. Integer vestibulum, libero sit amet hendrerit gravida, ante dolor commodo risus, id bibendum justo tellus nec arcu. Fusce ac nisi eu purus tempor dictum sit amet a justo.
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
             
-            Suspendisse potenti. Sed consectetur risus eu augue luctus congue. Nulla venenatis, odio a malesuada cursus, neque leo hendrerit purus, nec faucibus felis elit vel justo. Sed hendrerit turpis vel turpis tincidunt, non dictum justo condimentum. Quisque hendrerit odio non lacinia facilisis. Vestibulum non sodales leo. Nulla facilisi. Integer sodales tellus euismod mauris euismod, et volutpat sapien posuere. Aliquam erat volutpat. Curabitur viverra sapien sit amet ligula bibendum, sit amet placerat erat faucibus. Duis luctus odio vel massa facilisis congue. Nullam at metus non velit tristique iaculis. Etiam eu efficitur erat, nec lacinia lectus. Sed nec fermentum odio. Sed mattis diam non eleifend auctor.
-            </p>
+            <label for="mensaje">Mensaje:</label>
+            <textarea id="mensaje" name="mensaje" rows="4" required></textarea>
+            
+            <input type="submit" value="Enviar">
+        </form>
     </section>
 </body>
 </html>
