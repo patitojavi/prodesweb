@@ -5,24 +5,21 @@ const enlacesNavegacion = document.querySelectorAll('.menu a');
 const secciones = document.querySelectorAll('.seccion');
 
 // Función para mostrar una sección y ocultar las demás
-function mostrarSeccion(idSeccion) {
-    secciones.forEach(seccion => {
-        if (seccion.id === idSeccion) {
-            seccion.style.display = 'block';
-        } else {
-            seccion.style.display = 'none';
-        }
-    });
-}
 
-// Agregar un controlador de eventos clic a cada enlace de navegación
-enlacesNavegacion.forEach(enlace => {
-    enlace.addEventListener('click', (event) => {
-        event.preventDefault(); // Evitar la navegación predeterminada
-        const idSeccion = enlace.getAttribute('href').substring(1); // Obtener el ID de la sección
-        mostrarSeccion(idSeccion); // Mostrar la sección correspondiente
-    });
+function mostrarSeccion(seccion) {
+    var secciones = document.getElementsByClassName('seccion');
+    for (var i = 0; i < secciones.length; i++) {
+      secciones[i].style.display = 'none';
+    }
+  
+    if (seccion === 'contacto') {
+      document.getElementById('contacto').style.display = 'block';
+    } else {
+      document.getElementById(seccion).style.display = 'block';
+    }
+  }
+
+// Mostrar la sección "Home" por defecto al cargar la página
+window.addEventListener('load', () => {
+    mostrarSeccion('home');
 });
-
-// Mostrar la sección "Home" por defecto
-mostrarSeccion('home');

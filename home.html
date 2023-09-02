@@ -3,96 +3,62 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name = robots content = "index, follow">
+    <meta name="robots" content="index, follow">
     <meta name="description" content="Mantención de PC y servicios relacionados">
     <title>Mantención de PC</title>
     <link rel="stylesheet" type="text/css" href="css/styles.css">
-
 </head>
 <body>
     <script src="Funciones.js"></script>
     <nav class="navegacion">
         <ul class="menu">
             <li class="logo"><a href="home.html"><img src="ruta-de-la-imagen/logo.png" alt="Logo de la empresa"></a></li>
-            <li><a href="home.html">Home</a></li>
-            <li><a href="#productos-servicios">Productos y Servicios</a></li>
-            <li><a href="#quienes-somos">Quienes Somos</a></li>
+            <li><a href="home.html" onclick="mostrarSeccion('home')">Home</a></li>
+            <li><a href="#productos-servicios" onclick="mostrarSeccion('productos-servicios')">Productos y Servicios</a></li>
+            <li><a href="#quienes-somos" onclick="mostrarSeccion('quienes-somos')">Quienes Somos</a>
                 <ul class="submenu">
                     <li><a href="#historia">Historia</a></li>
                     <li><a href="#nuestro-equipo">Nuestro Equipo</a></li>
                 </ul>
-            
-            <li><a href="#contacto">Contacto</a></li>
+            </li>
+            <li><a href="#contacto" onclick="mostrarSeccion('contacto')">Contacto</a></li>
         </ul>
     </nav>
-
+    
     <section id="home" class="seccion">
         <h1>Home</h1>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam in justo eget arcu cursus bibendum. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Phasellus viverra lacinia ligula, eu fringilla metus efficitur eu. Quisque tristique consequat augue, eget laoreet lorem iaculis eu. Curabitur malesuada nulla in tortor condimentum, id lacinia arcu placerat. Sed id justo justo. Etiam convallis euismod facilisis. Pellentesque hendrerit risus non neque vehicula, eget bibendum velit finibus. Vivamus eget urna ac erat luctus cursus vel eu justo.
-
-            Sed gravida quam vel tortor sodales, in pharetra metus dignissim. Nam auctor libero vel neque fermentum lacinia. Integer hendrerit sem quis dolor venenatis, ac suscipit turpis vulputate. Cras aliquet non enim vel laoreet. Donec ut quam eu enim tincidunt sodales ut ac tellus. Sed non libero nec quam ullamcorper tristique. Maecenas sit amet libero eget dolor hendrerit vehicula. Ut a justo non dolor fermentum vehicula. Aenean malesuada nec arcu in ultricies. Integer id risus ut mi pharetra egestas.
-            
-            Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Sed sed tincidunt risus. Nam sodales tortor at risus tincidunt, id blandit purus laoreet. Praesent sit amet luctus sapien. In quis lectus in dolor gravida tincidunt sed in urna. Duis auctor tristique odio, nec aliquet lorem viverra a. Fusce nec tristique libero, eget malesuada augue. Integer vestibulum, libero sit amet hendrerit gravida, ante dolor commodo risus, id bibendum justo tellus nec arcu. Fusce ac nisi eu purus tempor dictum sit amet a justo.
-            
-            Suspendisse potenti. Sed consectetur risus eu augue luctus congue. Nulla venenatis, odio a malesuada cursus, neque leo hendrerit purus, nec faucibus felis elit vel justo. Sed hendrerit turpis vel turpis tincidunt, non dictum justo condimentum. Quisque hendrerit odio non lacinia facilisis. Vestibulum non sodales leo. Nulla facilisi. Integer sodales tellus euismod mauris euismod, et volutpat sapien posuere. Aliquam erat volutpat. Curabitur viverra sapien sit amet ligula bibendum, sit amet placerat erat faucibus. Duis luctus odio vel massa facilisis congue. Nullam at metus non velit tristique iaculis. Etiam eu efficitur erat, nec lacinia lectus. Sed nec fermentum odio. Sed mattis diam non eleifend auctor.
+        <p>
+            agregar texto e imagenes
             </p>
        
     </section>
 
     <section id="productos-servicios" class="seccion">
         <h1>Productos</h1>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam in justo eget arcu cursus bibendum. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Phasellus viverra lacinia ligula, eu fringilla metus efficitur eu. Quisque tristique consequat augue, eget laoreet lorem iaculis eu. Curabitur malesuada nulla in tortor condimentum, id lacinia arcu placerat. Sed id justo justo. Etiam convallis euismod facilisis. Pellentesque hendrerit risus non neque vehicula, eget bibendum velit finibus. Vivamus eget urna ac erat luctus cursus vel eu justo.
-
-            Sed gravida quam vel tortor sodales, in pharetra metus dignissim. Nam auctor libero vel neque fermentum lacinia. Integer hendrerit sem quis dolor venenatis, ac suscipit turpis vulputate. Cras aliquet non enim vel laoreet. Donec ut quam eu enim tincidunt sodales ut ac tellus. Sed non libero nec quam ullamcorper tristique. Maecenas sit amet libero eget dolor hendrerit vehicula. Ut a justo non dolor fermentum vehicula. Aenean malesuada nec arcu in ultricies. Integer id risus ut mi pharetra egestas.
-            
-            Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Sed sed tincidunt risus. Nam sodales tortor at risus tincidunt, id blandit purus laoreet. Praesent sit amet luctus sapien. In quis lectus in dolor gravida tincidunt sed in urna. Duis auctor tristique odio, nec aliquet lorem viverra a. Fusce nec tristique libero, eget malesuada augue. Integer vestibulum, libero sit amet hendrerit gravida, ante dolor commodo risus, id bibendum justo tellus nec arcu. Fusce ac nisi eu purus tempor dictum sit amet a justo.
-            
-            Suspendisse potenti. Sed consectetur risus eu augue luctus congue. Nulla venenatis, odio a malesuada cursus, neque leo hendrerit purus, nec faucibus felis elit vel justo. Sed hendrerit turpis vel turpis tincidunt, non dictum justo condimentum. Quisque hendrerit odio non lacinia facilisis. Vestibulum non sodales leo. Nulla facilisi. Integer sodales tellus euismod mauris euismod, et volutpat sapien posuere. Aliquam erat volutpat. Curabitur viverra sapien sit amet ligula bibendum, sit amet placerat erat faucibus. Duis luctus odio vel massa facilisis congue. Nullam at metus non velit tristique iaculis. Etiam eu efficitur erat, nec lacinia lectus. Sed nec fermentum odio. Sed mattis diam non eleifend auctor.
-            </p>
+        <p>agregar productos y decorar</p>
         
     </section>
 
     <section id="quienes-somos" class="seccion">
         <h1>Quienes somos</h1>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam in justo eget arcu cursus bibendum. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Phasellus viverra lacinia ligula, eu fringilla metus efficitur eu. Quisque tristique consequat augue, eget laoreet lorem iaculis eu. Curabitur malesuada nulla in tortor condimentum, id lacinia arcu placerat. Sed id justo justo. Etiam convallis euismod facilisis. Pellentesque hendrerit risus non neque vehicula, eget bibendum velit finibus. Vivamus eget urna ac erat luctus cursus vel eu justo.
-
-            Sed gravida quam vel tortor sodales, in pharetra metus dignissim. Nam auctor libero vel neque fermentum lacinia. Integer hendrerit sem quis dolor venenatis, ac suscipit turpis vulputate. Cras aliquet non enim vel laoreet. Donec ut quam eu enim tincidunt sodales ut ac tellus. Sed non libero nec quam ullamcorper tristique. Maecenas sit amet libero eget dolor hendrerit vehicula. Ut a justo non dolor fermentum vehicula. Aenean malesuada nec arcu in ultricies. Integer id risus ut mi pharetra egestas.
-            
-            Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Sed sed tincidunt risus. Nam sodales tortor at risus tincidunt, id blandit purus laoreet. Praesent sit amet luctus sapien. In quis lectus in dolor gravida tincidunt sed in urna. Duis auctor tristique odio, nec aliquet lorem viverra a. Fusce nec tristique libero, eget malesuada augue. Integer vestibulum, libero sit amet hendrerit gravida, ante dolor commodo risus, id bibendum justo tellus nec arcu. Fusce ac nisi eu purus tempor dictum sit amet a justo.
-            
-            Suspendisse potenti. Sed consectetur risus eu augue luctus congue. Nulla venenatis, odio a malesuada cursus, neque leo hendrerit purus, nec faucibus felis elit vel justo. Sed hendrerit turpis vel turpis tincidunt, non dictum justo condimentum. Quisque hendrerit odio non lacinia facilisis. Vestibulum non sodales leo. Nulla facilisi. Integer sodales tellus euismod mauris euismod, et volutpat sapien posuere. Aliquam erat volutpat. Curabitur viverra sapien sit amet ligula bibendum, sit amet placerat erat faucibus. Duis luctus odio vel massa facilisis congue. Nullam at metus non velit tristique iaculis. Etiam eu efficitur erat, nec lacinia lectus. Sed nec fermentum odio. Sed mattis diam non eleifend auctor.
-            </p>
+        <p>quienes somos? ni idea quienes somos </p>
        
     </section>
 
     <section id="historia" class="seccion">
         <h1>Historia</h1>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam in justo eget arcu cursus bibendum. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Phasellus viverra lacinia ligula, eu fringilla metus efficitur eu. Quisque tristique consequat augue, eget laoreet lorem iaculis eu. Curabitur malesuada nulla in tortor condimentum, id lacinia arcu placerat. Sed id justo justo. Etiam convallis euismod facilisis. Pellentesque hendrerit risus non neque vehicula, eget bibendum velit finibus. Vivamus eget urna ac erat luctus cursus vel eu justo.
-
-            Sed gravida quam vel tortor sodales, in pharetra metus dignissim. Nam auctor libero vel neque fermentum lacinia. Integer hendrerit sem quis dolor venenatis, ac suscipit turpis vulputate. Cras aliquet non enim vel laoreet. Donec ut quam eu enim tincidunt sodales ut ac tellus. Sed non libero nec quam ullamcorper tristique. Maecenas sit amet libero eget dolor hendrerit vehicula. Ut a justo non dolor fermentum vehicula. Aenean malesuada nec arcu in ultricies. Integer id risus ut mi pharetra egestas.
-            
-            Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Sed sed tincidunt risus. Nam sodales tortor at risus tincidunt, id blandit purus laoreet. Praesent sit amet luctus sapien. In quis lectus in dolor gravida tincidunt sed in urna. Duis auctor tristique odio, nec aliquet lorem viverra a. Fusce nec tristique libero, eget malesuada augue. Integer vestibulum, libero sit amet hendrerit gravida, ante dolor commodo risus, id bibendum justo tellus nec arcu. Fusce ac nisi eu purus tempor dictum sit amet a justo.
-            
-            Suspendisse potenti. Sed consectetur risus eu augue luctus congue. Nulla venenatis, odio a malesuada cursus, neque leo hendrerit purus, nec faucibus felis elit vel justo. Sed hendrerit turpis vel turpis tincidunt, non dictum justo condimentum. Quisque hendrerit odio non lacinia facilisis. Vestibulum non sodales leo. Nulla facilisi. Integer sodales tellus euismod mauris euismod, et volutpat sapien posuere. Aliquam erat volutpat. Curabitur viverra sapien sit amet ligula bibendum, sit amet placerat erat faucibus. Duis luctus odio vel massa facilisis congue. Nullam at metus non velit tristique iaculis. Etiam eu efficitur erat, nec lacinia lectus. Sed nec fermentum odio. Sed mattis diam non eleifend auctor.
-            </p>
+        <p>historia del paiton? </p>
       
     </section>
 
     <section id="nuestro-equipo" class="seccion">
         <h1>Equipo</h1>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam in justo eget arcu cursus bibendum. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Phasellus viverra lacinia ligula, eu fringilla metus efficitur eu. Quisque tristique consequat augue, eget laoreet lorem iaculis eu. Curabitur malesuada nulla in tortor condimentum, id lacinia arcu placerat. Sed id justo justo. Etiam convallis euismod facilisis. Pellentesque hendrerit risus non neque vehicula, eget bibendum velit finibus. Vivamus eget urna ac erat luctus cursus vel eu justo.
-
-            Sed gravida quam vel tortor sodales, in pharetra metus dignissim. Nam auctor libero vel neque fermentum lacinia. Integer hendrerit sem quis dolor venenatis, ac suscipit turpis vulputate. Cras aliquet non enim vel laoreet. Donec ut quam eu enim tincidunt sodales ut ac tellus. Sed non libero nec quam ullamcorper tristique. Maecenas sit amet libero eget dolor hendrerit vehicula. Ut a justo non dolor fermentum vehicula. Aenean malesuada nec arcu in ultricies. Integer id risus ut mi pharetra egestas.
-            
-            Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Sed sed tincidunt risus. Nam sodales tortor at risus tincidunt, id blandit purus laoreet. Praesent sit amet luctus sapien. In quis lectus in dolor gravida tincidunt sed in urna. Duis auctor tristique odio, nec aliquet lorem viverra a. Fusce nec tristique libero, eget malesuada augue. Integer vestibulum, libero sit amet hendrerit gravida, ante dolor commodo risus, id bibendum justo tellus nec arcu. Fusce ac nisi eu purus tempor dictum sit amet a justo.
-            
-            Suspendisse potenti. Sed consectetur risus eu augue luctus congue. Nulla venenatis, odio a malesuada cursus, neque leo hendrerit purus, nec faucibus felis elit vel justo. Sed hendrerit turpis vel turpis tincidunt, non dictum justo condimentum. Quisque hendrerit odio non lacinia facilisis. Vestibulum non sodales leo. Nulla facilisi. Integer sodales tellus euismod mauris euismod, et volutpat sapien posuere. Aliquam erat volutpat. Curabitur viverra sapien sit amet ligula bibendum, sit amet placerat erat faucibus. Duis luctus odio vel massa facilisis congue. Nullam at metus non velit tristique iaculis. Etiam eu efficitur erat, nec lacinia lectus. Sed nec fermentum odio. Sed mattis diam non eleifend auctor.
-            </p>
+        <p>pato arregla el css </p>
     
     </section>
 
     <section id="contacto" class="seccion">
-        <h2>Contacto</h2>
+        <h1>Contacto</h1>
         <form action="#" method="post">
             <label for="nombre">Nombre:</label>
             <input type="text" id="nombre" name="nombre" required>
