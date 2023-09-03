@@ -129,39 +129,26 @@
     </section>
 
     <section id="contacto" class="seccion">
-        <h1>Contacto</h1>
-        <form id="formulario-contacto" action="#" method="post">
-            <label for="nombre">Nombre Apellido:</label>
-            <input type="text" id="nombre" name="nombre" placeholder="Ej: Juan Perez" required>
-            <label for="email">Email:</label>
-            <input type="email" id="email" name="email" placeholder="Ej: juanperez@gmail.com" required>        
-            <label for="mensaje">Mensaje:</label>
-            <textarea id="mensaje" name="mensaje" rows="4" placeholder="Ingrese su mensaje aqui" required></textarea>
-            
-            <button id="enviarButton" type="submit">Enviar</button>
-
-        </form>
-        <script src="js/Funciones.js"></script>
-        <script>
-            document.addEventListener("DOMContentLoaded", function () {
-                const formulario = document.getElementById("formulario-contacto");
-        
-                formulario.addEventListener("submit", function (e) {
-                    e.preventDefault(); // Evita que el formulario se envíe de forma predeterminada
-        
-                    // Captura los valores ingresados por el usuario
-                    const nombre = document.getElementById("nombre").value;
-                    const email = document.getElementById("email").value;
-                    const mensaje = document.getElementById("mensaje").value;
-        
-                    // Construye un mensaje de alerta con los datos
-                    const alertMessage = `Nombre: ${nombre}\nEmail: ${email}\nMensaje: ${mensaje}`;
-        
-                    // Muestra los valores en una alerta
-                    alert(alertMessage);
-                });
-            });
-        </script>
-    </section>
+        <div class="contacto-container">
+            <div class="contacto-info">
+                <h1>CONTACTANOS</h1>
+                <div>
+                    <h2>Horario de Atención</h2>
+                    <p>Lunes A Sabado de: <br>9:00 Hrs hasta las 17:00 Hrs</p>
+                    <h2>Ubicación</h2>
+                    <p>Dirección: Rudecindo Ortega 2968-3308, Temuco, Araucanía, Chile · ~5,6 kmd</p>
+                </div>
+            </div>
+            <div class="contacto-formulario">
+                <h1>Envíanos un Mensaje</h1>
+                <form id="formulario-contacto" action="#" method="post">
+                    <label for="nombre">Nombre Apellido:</label>
+                    <input type="text" id="nombre" name="nombre" placeholder="Ej: Juan Perez" required>
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" placeholder="Ej: juanperez@gmail.com" required>        
+                    <label for="mensaje">Mensaje:</label>
+                    <textarea id="mensaje" name="mensaje" rows="4" placeholder="Ingrese su mensaje aquí" required></textarea>
+                    <button id="enviarButton" type="submit">Enviar</button>
+                </form>
 </body>
 </html>
