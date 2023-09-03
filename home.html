@@ -87,11 +87,10 @@
 
     <section id="contacto" class="seccion">
         <h1>Contacto</h1>
-        <form action="#" method="post">
+        <form id="formulario-contacto" action="#" method="post">
             <label for="nombre">Nombre:
                 <input type="text" id="nombre" name="nombre" placeholder="Ingrese su Nombre">
             </label>
-            
             
             <label for="email">Email:
                 <input type="email" id="email" name="email" placeholder="Ingrese su correo" >
@@ -101,6 +100,8 @@
             
             <input type="submit" value="Enviar">
         </form>
+        <div id="mensaje-enviado" style="display: none;">¡Tu mensaje ha sido enviado con éxito!</div>
     </section>
+    
 </body>
 </html>
