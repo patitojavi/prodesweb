@@ -214,6 +214,30 @@ table {
 
 
 /* Sección "historia" */
+#historia {
+    text-align: left; /* Alinea el texto a la izquierda */
+    padding: 40px;
+    background-color: #020202; /* Fondo gris oscuro */
+    color: #ffffff; /* Texto blanco */
+}
+
+#historia h1 {
+    font-size: 36px;
+    color: #c300ff; /* Título en rosa */
+    margin-bottom: 20px;
+}
+
+#historia h2 {
+    font-size: 36px;
+    color: #c300ff; /* Título en rosa */
+    margin-bottom: 20px;
+}
+
+#historia p {
+    font-size: 18px;
+    margin-top: 20px; /* Espacio superior para los párrafos */
+    text-align: justify; /* Justifica el texto */
+}
 
 
 /* Sección "nuestro-equipo" */
