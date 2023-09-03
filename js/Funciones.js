@@ -23,3 +23,4 @@ function mostrarSeccion(seccion) {
 window.addEventListener('load', () => {
     mostrarSeccion('home');
 });
+

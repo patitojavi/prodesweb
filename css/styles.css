@@ -8,6 +8,7 @@ body {
     padding: 0;
     margin-top: 0;
     padding-top: 80px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
 /* Barra de navegación */
@@ -53,7 +54,6 @@ body {
     display: block;
     padding: 20px 20px;
     color: #FAF0E6;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     text-decoration: none;
 }
 
@@ -80,7 +80,6 @@ body {
     display: block;
     padding: 15px;
     color: #FAF0E6;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     text-decoration: none;
 }
 
@@ -91,11 +90,12 @@ body {
     padding: 50px;
     text-align: center;
     margin: 0;
-    height: 90vh;
+    height: auto;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
+    overflow: hidden;
 }
 
 .contenidohome {
@@ -106,7 +106,7 @@ body {
 }
 
 .contenidohome h1 {
-    font-size: 70px;
+    font-size:60px;
     color: #FA00E1;
 }
 
@@ -129,10 +129,11 @@ body {
 .imagenhome {
     flex: 1;
     text-align: right;
+    margin-left: 400px;
 }
 
 .imagenhome img {
-    max-width: 80%;
+    max-width: 70%;
     height: auto;
     display: block;
     margin-top: 20px;
@@ -148,6 +149,57 @@ body {
 
 
 /* Sección "nuestro-equipo" */
+
+#nuestro-equipo {
+    text-align: center;
+    padding: 40px;
+    background-color: #141313; /* Fondo gris claro */
+}
+
+#nuestro-equipo h1 {
+    font-size: 46px;
+    color: #ffffff; /* Color de texto oscuro */
+    margin-bottom: 20px;
+}
+
+.equipo-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.equipo-member {
+    flex: 1;
+    max-width: 300px;
+    text-align: center;
+}
+
+.equipo-member img {
+    max-width: 100%;
+    border-radius: 50%; /* Para hacer que las imágenes sean redondas */
+}
+
+.equipo-member p {
+    font-size: 30px;
+    margin-top: 10px;
+    color: #ffffff;
+}
+
+.github-repo {
+    text-align: center;
+    margin-top: 50px;
+}
+
+.github-repo img {
+    max-width: 120px;
+}
+
+.github-repo p {
+    font-size: 32px;
+    color: #ffffff;
+}
 
 
 /* Sección "contacto" */
