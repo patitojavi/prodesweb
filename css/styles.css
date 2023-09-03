@@ -206,10 +206,12 @@ body {
 /* Estilos para el formulario de contacto */
 #formulario-contacto {
     background-color: #746767aa; /* Color de fondo del formulario */
-    padding: 20px;
+    padding: 10px;
     border-radius: 15px;
-    max-width: 455px; /* Ancho máximo del formulario */
+    max-width: 270px; /* Ancho máximo del formulario */
+    max-height:400px; /* Alto máximo del formulario */
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Sombra suave alrededor del formulario */
+    margin-left:50px ;
 }
 
 h1 {
@@ -217,6 +219,7 @@ h1 {
     color: #c300ff; /* Color de texto oscuro */
     margin-bottom: 20px;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin-left:50px ;
 }
 
 /* Estilos para las etiquetas y campos de entrada */
@@ -231,10 +234,10 @@ h1 {
 #formulario-contacto input[type="email"],
 /* Estilos para el campo de entrada de mensaje */
 #formulario-contacto textarea {
-    width: 100%; /* El campo de entrada se expande al 100% del ancho del contenedor */
+    width: 250px; /* El campo de entrada se expande al 100% del ancho del contenedor */
     padding: 10px;
     margin-bottom: 15px; /* Espacio entre campos de entrada */
-    border: none; /* Borde del campo de entrada */
+    border: 10px; /* Borde del campo de entrada */
     border-radius: 15px;
     font-size: 16px; /* Tamaño de fuente reducido */
     height: auto; /* Altura ajustada automáticamente según el contenido */
