@@ -27,7 +27,10 @@ window.addEventListener('load', () => {
 
 // Evento de escucha para el formulario de contacto
 document.getElementById('formulario-contacto').addEventListener('submit', function (event) {
-    event.preventDefault(); // Prevenir el comportamiento predeterminado del formulario
-    mostrarSeccion('contacto'); // Mostrar la sección de "Contacto"
-    document.getElementById('mensaje-enviado').style.display = 'block'; // Mostrar el mensaje de éxito
+  event.preventDefault(); // Prevenir el comportamiento predeterminado del formulario
+  mostrarSeccion('contacto'); // Mostrar la sección de "Contacto"
+  document.getElementById('mensaje-enviado').style.display = 'block'; // Mostrar el mensaje de éxito
+
+  // Restablecer el formulario después de mostrar el mensaje (opcional)
+  document.getElementById('formulario-contacto').reset();
 });
