@@ -46,9 +46,21 @@
     </section>
 
     <section id="productos-servicios" class="seccion">
-        <h1>Productos</h1>
-        <p>agregar productos y decorar</p>
-        
+        <h1>Productos y Servicios</h1>
+        <table>
+            <tr>
+                <!-- Categoría 1: Mantención de PC -->
+                <td class="categoria" onclick="irACategoria('pc')" onmouseover="animacionMouseOver(this)" onmouseout="animacionMouseOut(this)">
+                    <img src="/img/pcEscritorio.png" alt="Mantención de PC">
+                    <p>Mantención de PC</p>
+                </td>
+                <!-- Categoría 2: Mantención de Notebook -->
+                <td class="categoria" onclick="irACategoria('notebook')" onmouseover="animacionMouseOver(this)" onmouseout="animacionMouseOut(this)">
+                    <img src="/img/notebook.png" alt="Mantención de Notebook">
+                    <p>Mantención de Notebook</p>
+                </td>
+            </tr>
+        </table>
     </section>
 
     <section id="quienes-somos" class="seccion">

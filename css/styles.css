@@ -130,6 +130,12 @@ body {
     flex: 1;
     text-align: right;
     margin-left: 400px;
+    transition: transform 0.3s ease;
+}
+
+.imagenhome:hover{
+    transform: scale(1.1); /* Aumenta ligeramente el tamaño al pasar el mouse */
+    cursor: pointer; /* Cambia el cursor al pasar el mouse */
 }
 
 .imagenhome img {
@@ -140,7 +146,44 @@ body {
 }
 
 /* Sección "productos-servicios" */
+#productos-servicios {
+    text-align: center; /* Centrar el contenido de la sección horizontalmente */
+    padding: 40px;
+    background-color: #292929; /* Fondo gris claro */
+}
 
+#productos-servicios h1 {
+    font-size: 36px;
+    color: #ffffff; /* Color de texto oscuro */
+    margin-bottom: 20px;
+}
+
+/* Centrar la tabla */
+table {
+    margin: 0 auto; /* Centrar horizontalmente la tabla */
+}
+
+.categoria {
+    text-align: center; /* Centrar el contenido de las celdas horizontalmente */
+    border: 2px solid #ccc;
+    border-radius: 10px;
+    padding: 20px;
+    transition: transform 0.3s ease;
+}
+.categoria:hover {
+    transform: scale(1.1); /* Aumenta ligeramente el tamaño al pasar el mouse */
+    cursor: pointer; /* Cambia el cursor al pasar el mouse */
+}
+.categoria img {
+    height: auto;
+    border-radius: 10px;
+}
+
+.categoria p {
+    font-size: 18px;
+    color: #ffffff;
+    margin-top: 10px;
+}
 
 /* Sección "quienes-somos" */
 
@@ -174,8 +217,13 @@ body {
     flex: 1;
     max-width: 300px;
     text-align: center;
+    transition: transform 0.3s ease;
 }
 
+.equipo-member:hover{
+    transform: scale(1.1); /* Aumenta ligeramente el tamaño al pasar el mouse */
+    cursor: pointer; /* Cambia el cursor al pasar el mouse */
+}
 .equipo-member img {
     max-width: 100%;
     border-radius: 50%; /* Para hacer que las imágenes sean redondas */

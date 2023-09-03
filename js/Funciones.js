@@ -24,3 +24,23 @@ window.addEventListener('load', () => {
     mostrarSeccion('home');
 });
 
+function irACategoria(categoria) {
+  // Aquí puedes redirigir al usuario a la página correspondiente a la categoría
+  // Por ejemplo, puedes usar window.location.href = 'ruta-de-la-pagina.html';
+  // Reemplaza 'ruta-de-la-pagina.html' por la URL de la página de la categoría.
+
+  // Ejemplo de redirección ficticia (reemplaza esto con tu lógica real):
+  if (categoria === 'pc') {
+      window.location.href = 'mantencion-pc.html';
+  } else if (categoria === 'notebook') {
+      window.location.href = 'mantencion-notebook.html';
+  }
+}
+
+function animacionMouseOver(elemento) {
+  elemento.style.transform = 'scale(1.1)';
+}
+
+function animacionMouseOut(elemento) {
+  elemento.style.transform = 'scale(1)';
+}
