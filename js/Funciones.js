@@ -25,7 +25,6 @@ window.addEventListener('load', () => {
     mostrarSeccion('home');
 });
 
-// Evento de escucha para el formulario de contacto
 document.getElementById('formulario-contacto').addEventListener('submit', function (event) {
   event.preventDefault(); // Prevenir el comportamiento predeterminado del formulario
   mostrarSeccion('contacto'); // Mostrar la sección de "Contacto"
@@ -33,4 +32,5 @@ document.getElementById('formulario-contacto').addEventListener('submit', functi
   document.getElementById('formulario-contacto').reset()
   // Restablecer el formulario después de mostrar el mensaje (opcional)
   ;
+  alert('¡Tu mensaje ha sido enviado con éxito!'); // Mostrar un alert con el mensaje de éxito
 });
