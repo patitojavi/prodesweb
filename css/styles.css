@@ -303,6 +303,7 @@ table {
 /* Estilos para la sección de contacto */
 #contacto {
     display: flex;
+    margin-top: auto;
 }
 
 .seccion h1 {
