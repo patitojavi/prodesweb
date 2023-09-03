@@ -250,4 +250,65 @@ table {
 }
 
 
-/* Sección "contacto" */
+/* Estilos para el formulario de contacto */
+#formulario-contacto {
+    background-color: #746767aa; /* Color de fondo del formulario */
+    padding: 10px;
+    border-radius: 15px;
+    max-width: 270px; /* Ancho máximo del formulario */
+    max-height:400px; /* Alto máximo del formulario */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Sombra suave alrededor del formulario */
+    margin-left:50px ;
+}
+
+h1 {
+    font-size: 36px; /* Tamaño de fuente reducido */
+    color: #c300ff; /* Color de texto oscuro */
+    margin-bottom: 20px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin-left:50px ;
+}
+
+/* Estilos para las etiquetas y campos de entrada */
+#formulario-contacto label {
+    display: block; /* Hace que las etiquetas estén en una línea separada */
+    font-size: 18px; /* Tamaño de fuente reducido */
+    margin-bottom: 10px; /* Espacio entre etiquetas y campos de entrada */
+    color: #c300ff; /* Color de texto oscuro */
+}
+
+#formulario-contacto input[type="text"],
+#formulario-contacto input[type="email"],
+/* Estilos para el campo de entrada de mensaje */
+#formulario-contacto textarea {
+    width: 250px; /* El campo de entrada se expande al 100% del ancho del contenedor */
+    padding: 10px;
+    margin-bottom: 15px; /* Espacio entre campos de entrada */
+    border: 10px; /* Borde del campo de entrada */
+    border-radius: 15px;
+    font-size: 16px; /* Tamaño de fuente reducido */
+    height: auto; /* Altura ajustada automáticamente según el contenido */
+    resize: none; /* Desactiva la redimensión por parte del usuario */
+}
+
+/* Estilos para el botón de envío */
+#formulario-contacto input[type="submit"] {
+    background-color: #c300ff;
+    color: #fff;
+    padding: 15px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+/* Estilos para el mensaje de éxito */
+#mensaje-enviado {
+    background-color: #c300ff;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+    border-radius: 5px;
+    margin-top: 15px; /* Espacio entre el formulario y el mensaje de éxito */
+    display: none;
+}

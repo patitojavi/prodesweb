@@ -44,3 +44,17 @@ function animacionMouseOver(elemento) {
 function animacionMouseOut(elemento) {
   elemento.style.transform = 'scale(1)';
 }
+
+// Obtener el botón "Enviar" por su id
+const enviarButton = document.getElementById('enviarButton');
+
+// Agregar un evento de clic al botón
+enviarButton.addEventListener('click', function(event) {
+    // Prevenir el comportamiento predeterminado del formulario (evitar que se envíe)
+    event.preventDefault();
+
+    // Mostrar una alerta en pantalla
+    alert('Mensaje enviado correctamente');
+    
+    // Puedes agregar aquí el código para enviar el formulario al servidor si es necesario
+});
