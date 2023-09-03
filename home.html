@@ -141,6 +141,27 @@
             <button id="enviarButton" type="submit">Enviar</button>
 
         </form>
+        <script src="js/Funciones.js"></script>
+        <script>
+            document.addEventListener("DOMContentLoaded", function () {
+                const formulario = document.getElementById("formulario-contacto");
+        
+                formulario.addEventListener("submit", function (e) {
+                    e.preventDefault(); // Evita que el formulario se envíe de forma predeterminada
+        
+                    // Captura los valores ingresados por el usuario
+                    const nombre = document.getElementById("nombre").value;
+                    const email = document.getElementById("email").value;
+                    const mensaje = document.getElementById("mensaje").value;
+        
+                    // Construye un mensaje de alerta con los datos
+                    const alertMessage = `Nombre: ${nombre}\nEmail: ${email}\nMensaje: ${mensaje}`;
+        
+                    // Muestra los valores en una alerta
+                    alert(alertMessage);
+                });
+            });
+        </script>
     </section>
 </body>
 </html>
