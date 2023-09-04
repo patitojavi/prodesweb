@@ -24,7 +24,8 @@
             <li><a href="#contacto" onclick="mostrarSeccion('contacto')">Contacto</a></li>
         </ul>
     </nav>
-    
+
+
     <section id="home" class="seccion">
         <div class="rectangulohome">
             <div class="contenidohome">
@@ -45,6 +46,7 @@
         </div>    
     </section>
 
+
     <section id="productos-servicios" class="seccion">
         <h1>Productos y Servicios</h1>
         <table>
@@ -62,6 +64,7 @@
             </tr>
         </table>
     </section>
+
 
     <section id="quienes-somos" class="seccion">
         <h1>Quiénes Somos</h1>
@@ -81,11 +84,10 @@
             <li>Compromiso: Estamos comprometidos con la satisfacción total de nuestros clientes.</li>
         </ul>
     </section>
-    
+
 
     <section id="historia" class="seccion">
         <h1>Historia</h1>
-
         <h2>Nuestros Inicios</h2>
         <p>Nuestra historia comienza en el corazón de la tecnología, en una pequeña sala de estar donde un grupo de entusiastas de la informática se reunía para compartir su pasión por la tecnología. Este grupo de amigos compartía un objetivo común: brindar soluciones a los problemas informáticos que afectaban a las personas en su vida diaria.</p>
         
@@ -102,7 +104,7 @@
         
         <p>Gracias por ser parte de nuestra historia y confiar en nosotros para mantener sus dispositivos en funcionamiento de manera óptima. ¡Esperamos con interés lo que depara el futuro para nuestra empresa y nuestros clientes!</p>
     </section>
-    
+
 
     <section id="nuestro-equipo" class="seccion">
         <h1>NUESTRO EQUIPO</h1>
@@ -127,6 +129,7 @@
             </a>
         </div>
     </section>
+
 
     <section id="contacto" class="seccion">
         <div class="contacto-container">
@@ -153,5 +156,23 @@
                     <textarea id="mensaje" name="mensaje" rows="4" placeholder="Ingrese su mensaje aquí" required></textarea>
                     <button id="enviarButton" type="submit">Enviar</button>
                 </form>
+                <script src="js/Funciones.js"></script>
+            <script>
+                document.addEventListener("DOMContentLoaded", function () {
+                    const formulario = document.getElementById("formulario-contacto");
+                    formulario.addEventListener("submit", function (e) {
+                        e.preventDefault(); // Evita que el formulario se envíe de forma predeterminada
+                        // Captura los valores ingresados por el usuario
+                        const nombre = document.getElementById("nombre").value;
+                        const email = document.getElementById("email").value;
+                        const mensaje = document.getElementById("mensaje").value;
+                        // Construye un mensaje de alerta con los datos
+                        const alertMessage = `Nombre: ${nombre}\nEmail: ${email}\nMensaje: ${mensaje}`;
+                        // Muestra los valores en una alerta
+                        alert(alertMessage);
+                    });
+                });
+            </script>
+    </section>
 </body>
 </html>
