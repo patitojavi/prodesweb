@@ -1,48 +1,53 @@
+/* Estilos generales para HTML */
 html {
-    scroll-behavior: smooth;
+    scroll-behavior: smooth; /* Agrega un desplazamiento suave a las anclas */
 }
 
+/* Estilos generales para el cuerpo del sitio */
 body {
-    background: #0c0b0b;
+    background: #0c0b0b; /* Fondo oscuro */
     margin: 0;
     padding: 0;
     margin-top: 0;
-    padding-top: 50px;
+    padding-top: 50px; /* Espacio superior para la barra de navegación */
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
-/* Barra de navegación */
+/* Estilos para la barra de navegación */
+/* La barra de navegación se mantiene en la parte superior de la página */
 .navegacion {
-    background-color: #000000;
-    color: #fff;
+    background-color: #000000; /* Fondo negro */
+    color: #fff; /* Texto blanco */
     padding: 0px;
-    position: fixed;
+    position: fixed; /* Se mantiene fija en la parte superior */
     top: 0;
     left: 0;
     right: 0;
-    z-index: 1000;
+    z-index: 1000; /* Capa superior, para estar por encima del contenido */
 }
 
+/* Estilos para el  logo */
 .logo {
-    flex: 1;
+    flex: 1; /* Ocupa una parte flexible del espacio en la barra de navegación */
 }
 
+/* Estilos para el menú de navegación */
 .menu {
-    flex: 3;
+    flex: 3; /* Ocupa la mayor parte de la barra de navegación */
     list-style: none;
     padding: 0;
     margin: 0;
-    display: flex;
-    justify-content: flex-end;
+    display: flex; /* Organiza los elementos en fila */
+    justify-content: flex-end; /* Alinea los elementos a la derecha */
     align-items: center;
 }
 
 .menu li {
-    margin-left: 20px;
+    margin-left: 20px; /* Espacio entre elementos del menú */
 }
 
 .menu li:first-child {
-    margin-left: 0;
+    margin-left: 0; /* No hay margen izquierdo para el primer elemento */ 
 }
 
 .menu > li {
@@ -53,25 +58,27 @@ body {
 .menu > li > a {
     display: block;
     padding: 20px 20px;
-    color: #FAF0E6;
+    color: #FAF0E6; /* Color del texto del menú */
     text-decoration: none;
 }
 
 .menu li a:hover {
-    color: #c300ff;
-    transition: all .3s;
+    color: #c300ff; /* Color del texto al pasar el mouse */
+    transition: all .3s; /* Efecto de transición suave */
 }
 
+/* Mostrar el submenú al pasar el mouse sobre el elemento del menú */
 .menu li:hover .submenu {
     visibility: visible;
     opacity: 1;
 }
 
+/* Estilos para el submenú desplegable */
 .submenu {
     position: absolute;
-    background: #00000033;
+    background: #00000033; /* Fondo semi-transparente */
     width: 100%;
-    visibility: hidden;
+    visibility: hidden; /* Oculto por defecto */
     opacity: 0; /* Establece la opacidad inicial en 0 */
     transition: opacity 0.3s; /* Ajusta la duración de la transición */
 }
@@ -79,45 +86,44 @@ body {
 .submenu li a {
     display: block;
     padding: 15px;
-    color: #FAF0E6;
+    color: #FAF0E6; /* Color del texto del submenú */
     text-decoration: none;
 }
 
-/* Sección "Home" */
-
+/* Estilos para la sección "Home" */
 .rectangulohome {
-    background-color: #141313;
+    background-color: #141313; /* Fondo oscuro */
     padding: 50px;
     text-align: center;
     margin: 0;
     height: auto;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+    display: flex; /* Organiza los elementos en fila */
+    flex-direction: row; /* Coloca los elementos en fila */
+    justify-content: space-between; /* Espacio entre elementos */
     align-items: center;
     overflow: hidden;
 }
 
 .contenidohome {
-    flex: 1;
+    flex: 1; /* Ocupa una parte flexible del espacio en la sección "Home" */
     padding: 20px;
     text-align: left;
-    color: #FAF0E6;
+    color: #FAF0E6; /* Color del texto */
 }
 
 .contenidohome h1 {
-    font-size:60px;
-    color: #FA00E1;
+    font-size: 60px; /* Tamaño del título */
+    color: #FA00E1; /* Color del título */
 }
 
 .contenidohome p {
-    font-size: 25px;
+    font-size: 25px; /* Tamaño del párrafo */
     margin-top: 40px;
 }
 
 .contenidohome button {
-    background-color: #c300ff;
-    color: #fff;
+    background-color: #c300ff; /* Color del botón */
+    color: #fff; /* Color del texto del botón */
     padding: 25px 50px;
     border: none;
     border-radius: 5px;
@@ -127,13 +133,13 @@ body {
 }
 
 .imagenhome {
-    flex: 1;
+    flex: 1; /* Ocupa una parte flexible del espacio en la sección "Home" */
     text-align: right;
     margin-left: 400px;
-    transition: transform 0.3s ease;
+    transition: transform 0.3s ease; /* Efecto de transformación al pasar el mouse */
 }
 
-.imagenhome:hover{
+.imagenhome:hover {
     transform: scale(1.1); /* Aumenta ligeramente el tamaño al pasar el mouse */
     cursor: pointer; /* Cambia el cursor al pasar el mouse */
 }
@@ -145,7 +151,7 @@ body {
     margin-top: 20px;
 }
 
-/* Sección "productos-servicios" */
+/* Estilos para la sección "productos-servicios" */
 #productos-servicios {
     text-align: center; /* Centrar el contenido de la sección horizontalmente */
     padding: 40px;
@@ -154,7 +160,7 @@ body {
 
 #productos-servicios h1 {
     font-size: 36px;
-    color: #ffffff; /* Color de texto oscuro */
+    color: #ffffff; /* Color del título */
     margin-bottom: 20px;
 }
 
@@ -168,12 +174,14 @@ table {
     border: 2px solid #ccc;
     border-radius: 10px;
     padding: 20px;
-    transition: transform 0.3s ease;
+    transition: transform 0.3s ease; /* Efecto de transformación al pasar el mouse */
 }
+
 .categoria:hover {
     transform: scale(1.1); /* Aumenta ligeramente el tamaño al pasar el mouse */
     cursor: pointer; /* Cambia el cursor al pasar el mouse */
 }
+
 .categoria img {
     height: auto;
     border-radius: 10px;
@@ -185,7 +193,7 @@ table {
     margin-top: 10px;
 }
 
-/* Sección "quienes-somos" */
+/* Estilos para la sección "quienes-somos" */
 #quienes-somos {
     text-align: left; /* Alinea el texto a la izquierda */
     padding: 40px;
@@ -211,9 +219,7 @@ table {
     text-align: justify; /* Justifica el texto */
 }
 
-
-
-/* Sección "historia" */
+/* Estilos para la sección "historia" */
 #historia {
     text-align: left; /* Alinea el texto a la izquierda */
     padding: 40px;
@@ -239,9 +245,7 @@ table {
     text-align: justify; /* Justifica el texto */
 }
 
-
-/* Sección "nuestro-equipo" */
-
+/* Estilos para la sección "nuestro-equipo" */
 #nuestro-equipo {
     text-align: center;
     padding: 40px;
@@ -266,13 +270,14 @@ table {
     flex: 1;
     max-width: 300px;
     text-align: center;
-    transition: transform 0.3s ease;
+    transition: transform 0.3s ease; /* Efecto de transformación al pasar el mouse */
 }
 
-.equipo-member:hover{
+.equipo-member:hover {
     transform: scale(1.1); /* Aumenta ligeramente el tamaño al pasar el mouse */
     cursor: pointer; /* Cambia el cursor al pasar el mouse */
 }
+
 .equipo-member img {
     max-width: 100%;
     border-radius: 50%; /* Para hacer que las imágenes sean redondas */
@@ -284,6 +289,7 @@ table {
     color: #ffffff;
 }
 
+/* Estilos para el bloque del repositorio de GitHub */
 .github-repo {
     text-align: center;
     margin-top: 50px;
@@ -298,19 +304,19 @@ table {
     color: #ffffff;
 }
 
-
-/* Estilos para el formulario de contacto */
 /* Estilos para la sección de contacto */
 #contacto {
     display: flex;
-    margin-top: auto;
+    margin-top: auto; /* Coloca la sección de contacto en la parte inferior */
 }
 
+/* Estilos para el título de la sección de contacto */
 .seccion h1 {
     font-size: 36px;
-    color: #c300ff;
+    color: #c300ff; /* Color del título */
 }
 
+/* Estilos para el contenedor de información de contacto */
 .contacto-container {
     display: flex;
     width: 95%;
@@ -319,6 +325,7 @@ table {
     align-items: center;
 }
 
+/* Estilos para la información de contacto */
 .contacto-info {
     display: flex;
     justify-content: center;
@@ -334,18 +341,19 @@ table {
     display: flex;
     flex-direction: column;
     align-items: center;
-    background: #202020;
+    background: #202020; /* Fondo oscuro */
     border-radius: 10px;
     font-size: 20px;
     font-weight: bold;
     text-align: center;
-    color: #fff;
+    color: #fff; /* Texto blanco */
 }
 
 .contacto-info h2 {
-    color: #c300ff;
+    color: #c300ff; /* Color del título */
 }
 
+/* Estilos para el formulario de contacto */
 .contacto-formulario {
     display: flex;
     margin: auto;
@@ -355,7 +363,7 @@ table {
     width: 45%; /* Ancho máximo del formulario */
 }
 
-
+/* Estilos para el formulario de contacto */
 #formulario-contacto {
     padding: 20px;
     width: 100%;
@@ -370,7 +378,7 @@ table {
 #formulario-contacto label {
     font-size: 18px;
     margin: 10px 0;
-    color: #c300ff;
+    color: #c300ff; /* Color de las etiquetas del formulario */
 }
 
 #formulario-contacto input[type="text"],
@@ -383,8 +391,8 @@ table {
 
 #formulario-contacto button {
     margin-top: 20px;
-    background-color: #c300ff;
-    color: #fff;
+    background-color: #c300ff; /* Color del botón */
+    color: #fff; /* Color del texto del botón */
     padding: 15px 20px;
     border: none;
     border-radius: 5px;
