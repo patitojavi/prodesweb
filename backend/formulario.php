@@ -9,9 +9,11 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
     // Se define la consulta
     $sql = "INSERT INTO FormularioDatos (Nombre, Email, Mensaje) VALUES (?, ?, ?)";
+    
     // Prepara la consulta
     if ($stmt = $conn->prepare($sql)) {
         $stmt->bind_param("sss", $nombre, $email, $mensaje);
+        
         // Ejecuta la consulta
         if ($stmt->execute()) {
             echo "Los datos se han guardado correctamente en la base de datos.";
@@ -24,6 +26,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         echo "Error al preparar la consulta: " . $conn->error;
     }
 }
-// Cierra la conexión para buenas practicas de programación y ahorrar recursos del servidor
+
+// Cierra la conexión para buenas prácticas de programación y ahorrar recursos del servidor
 $conn->close();
 ?>
