@@ -1,8 +1,8 @@
 <?php
     $host = "db.inf.uct.cl";
-    $usuario = "eescares";
-    $contrasena = "20318620";
-    $base_datos = "A2023_eescares";
+    $usuario = "pbenavides";
+    $contrasena = "21207407";
+    $base_datos = "A2023_pbenavides";
 
     $conexion = mysqli_connect($host, $usuario, $contrasena, $base_datos);
     mysqli_set_charset($conexion, "utf8");
