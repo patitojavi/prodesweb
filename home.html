@@ -147,7 +147,7 @@
             <div class="contacto-formulario">
                 <br>
                 <h1>Envíanos un Mensaje</h1>
-                <form id="formulario-contacto" action="#" method="post">
+                <form id="formulario-contacto" action="/backend/formulario.php" method="post">
                     <label for="nombre">Nombre Apellido:</label>
                     <input type="text" id="nombre" name="nombre" placeholder="Ej: Juan Perez" required>
                     <label for="email">Email:</label>
@@ -156,20 +156,40 @@
                     <textarea id="mensaje" name="mensaje" rows="4" placeholder="Ingrese su mensaje aquí" required></textarea>
                     <button id="enviarButton" type="submit">Enviar</button>
                 </form>
+                <div id="respuesta"></div>
+                
                 <script src="js/Funciones.js"></script>
             <script>
                 document.addEventListener("DOMContentLoaded", function () {
                     const formulario = document.getElementById("formulario-contacto");
+                    const respuestaDiv = document.getElementById("respuesta");
+
                     formulario.addEventListener("submit", function (e) {
                         e.preventDefault(); // Evita que el formulario se envíe de forma predeterminada
-                        // Captura los valores ingresados por el usuario
+
                         const nombre = document.getElementById("nombre").value;
                         const email = document.getElementById("email").value;
                         const mensaje = document.getElementById("mensaje").value;
-                        // Construye un mensaje de alerta con los datos
-                        const alertMessage = `Nombre: ${nombre}\nEmail: ${email}\nMensaje: ${mensaje}`;
-                        // Muestra los valores en una alerta
-                        alert(alertMessage);
+
+                        // Crea un objeto FormData para enviar los datos al servidor
+                        const formData = new FormData();
+                        formData.append("nombre", nombre);
+                        formData.append("email", email);
+                        formData.append("mensaje", mensaje);
+
+                        // Realiza una solicitud utilizando fetch para enviar los datos al servidor
+                        fetch("procesar_formulario.php", {
+                            method: "POST",
+                            body: formData,
+                        })
+                        .then(response => response.text())
+                        .then(data => {
+                            // Muestra la respuesta del servidor en la página
+                            respuestaDiv.innerHTML = data;
+                        })
+                        .catch(error => {
+                            console.error("Error:", error);
+                        });
                     });
                 });
             </script>
