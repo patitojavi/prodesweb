@@ -1,6 +1,6 @@
 <?php
 // se llama a la conexion de la base de datos
-include '/backend/conex.inc';
+include 'backend/conex.inc.php';
 ?>
 
 <!DOCTYPE html>
