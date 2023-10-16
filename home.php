@@ -1,4 +1,7 @@
-
+<?php
+// se llama a la conexion de la base de datos
+include '/backend/conex.inc';
+?>
 
 <!DOCTYPE html>
 <html lang="es">
@@ -180,7 +183,7 @@
                         formData.append("mensaje", mensaje);
 
                         // Realiza una solicitud utilizando fetch para enviar los datos al servidor
-                        fetch("procesar_formulario.php", {
+                        fetch("formulario.php", {
                             method: "POST",
                             body: formData,
                         })

@@ -3,7 +3,8 @@
 include 'conex.inc';
 
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
-    $nombre = $_POST["nombre"];
+    $nombre_apellido = $_POST["nombre"];
+    list($nombre, $apellido) = explode(' ', $nombre_apellido, 2); // Separar en dos partes el nombre y apellido
     $email = $_POST["email"];
     $mensaje = $_POST["mensaje"];
 
