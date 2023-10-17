@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <link rel="stylesheet" type="text/css" href="/css/styles.css">
+    <link rel="stylesheet" type="text/css" href="/css/nuestro-equipo.css">
+</head>
+
+<body>
+
+
+
+    <script src="/js/mostrar-seccion.js"></script>
+    <nav class="navegacion">
+        <ul class="menu">
+            <li class="logo"><a href="home.html"><img
+                        src="https://pillan.inf.uct.cl/~eescares/DesWeb/Proyecto/Entrega1/prodesweb/img/becrux.png"
+                        alt="Logo de la empresa"></a></li>
+            <li><a href="home.html" onclick="mostrarSeccion('home')">Home</a></li>
+            <li><a href="productos-servicios.html" onclick="mostrarSeccion('productos-servicios')">Productos y Servicios</a>
+            </li>
+            <li><a href="quienes-somos.html" onclick="mostrarSeccion('quienes-somos')">Quienes Somos</a>
+                <ul class="submenu">
+                    <li><a href="historia.html" onclick="mostrarSeccion('historia')">Historia</a></li>
+                    <li><a href="nuestro-equipo.html" onclick="mostrarSeccion('nuestro-equipo')">Nuestro Equipo</a></li>
+                </ul>
+            </li>
+            <li><a href="contacto.html" onclick="mostrarSeccion('contacto')">Contacto</a></li>
+        </ul>
+    </nav>
+
+
+
+    <section id="nuestro-equipo" class="seccion">
+        <h1>NUESTRO EQUIPO</h1>
+        <div class="equipo-container">
+            <div class="equipo-member">
+                <a href="https://github.com/eduardoscrs" target="_blank">
+                    <img src="https://pillan.inf.uct.cl/~eescares/DesWeb/Proyecto/Entrega1/prodesweb/img/eduardoscrs.png"
+                        alt="Eduardo Escares en Github">
+                    <p>EDUARDO ESCARES</p>
+                </a>
+            </div>
+            <div class="equipo-member">
+                <a href="https://github.com/patitojavi" target="_blank">
+                    <img src="https://pillan.inf.uct.cl/~eescares/DesWeb/Proyecto/Entrega1/prodesweb/img/patitoajvi.png"
+                        alt="Patricio Benavides en Github">
+                    <p>PATRICIO BENAVIDES</p>
+                </a>
+            </div>
+        </div>
+        <div class="github-repo">
+            <a href="https://github.com/patitojavi/prodesweb" target="_blank">
+                <img src="https://pillan.inf.uct.cl/~eescares/DesWeb/Proyecto/Entrega1/prodesweb/img/GitHub-Logo.png"
+                    alt="GitHub Logo">
+                <p>VISITA NUESTRO REPOSITORIO EN GITHUB</p>
+            </a>
+        </div>
+    </section>
+
+
+</body>
+
+</html>

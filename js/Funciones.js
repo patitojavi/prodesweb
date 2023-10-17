@@ -4,23 +4,6 @@ const enlacesNavegacion = document.querySelectorAll('.menu a');
 // Obtener todas las secciones
 const secciones = document.querySelectorAll('.seccion');
 
-// Función para mostrar una sección y ocultar las demás
-function mostrarSeccion(seccion) {
-    // Obtener todas las secciones
-    var secciones = document.getElementsByClassName('seccion');
-    
-    // Ocultar todas las secciones
-    for (var i = 0; i < secciones.length; i++) {
-        secciones[i].style.display = 'none';
-    }
-  
-    // Mostrar la sección deseada
-    if (seccion === 'contacto') {
-        document.getElementById('contacto').style.display = 'block';
-    } else {
-        document.getElementById(seccion).style.display = 'block';
-    }
-}
 
 // Mostrar la sección "Home" por defecto al cargar la página
 window.addEventListener('load', () => {

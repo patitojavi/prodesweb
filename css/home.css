@@ -1,0 +1,60 @@
+/* Estilos para la sección "Home" */
+.rectangulohome {
+    background-color: #141313;
+    padding: 50px;
+    text-align: center;
+    margin: 0;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    overflow: hidden;
+}
+
+.contenidohome {
+    flex: 1;
+    padding: 20px;
+    text-align: left;
+    color: #FAF0E6;
+}
+
+.contenidohome h1 {
+    font-size: 60px;
+    color: #FA00E1;
+}
+
+.contenidohome p {
+    font-size: 25px;
+    margin-top: 40px;
+}
+
+.contenidohome button {
+    background-color: #c300ff;
+    color: #ffffff;
+    padding: 25px 50px;
+    border: none;
+    border-radius: 5px;
+    font-size: 18px;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+.imagenhome {
+    flex: 1;
+    text-align: right;
+    margin-left: 400px;
+    transition: transform 0.3s ease;
+}
+
+.imagenhome:hover {
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+.imagenhome img {
+    max-width: 70%;
+    height: auto;
+    display: block;
+    margin-top: 20px;
+}

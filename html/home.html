@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="robots" content="index, follow">
+    <meta name="description" content="Mantención de PC y servicios relacionados">
+    <title>Mantención de PC</title>
+    <link rel="stylesheet" type="text/css" href="/css/styles.css">
+    <link rel="stylesheet" type="text/css" href="/css/home.css">
+</head>
+
+<body>
+
+    <script src="/js/mostrar-seccion.js"></script>
+    <nav class="navegacion">
+        <ul class="menu">
+            <li class="logo"><a href="home.html"><img
+                        src="https://pillan.inf.uct.cl/~eescares/DesWeb/Proyecto/Entrega1/prodesweb/img/becrux.png"
+                        alt="Logo de la empresa"></a></li>
+            <li><a href="home.html" onclick="mostrarSeccion('home')">Home</a></li>
+            <li><a href="productos-servicios.html" onclick="mostrarSeccion('productos-servicios')">Productos y Servicios</a>
+            </li>
+            <li><a href="quienes-somos.html" onclick="mostrarSeccion('quienes-somos')">Quienes Somos</a>
+                <ul class="submenu">
+                    <li><a href="historia.html" onclick="mostrarSeccion('historia')">Historia</a></li>
+                    <li><a href="nuestro-equipo.html" onclick="mostrarSeccion('nuestro-equipo')">Nuestro Equipo</a></li>
+                </ul>
+            </li>
+            <li><a href="contacto.html" onclick="mostrarSeccion('contacto')">Contacto</a></li>
+        </ul>
+    </nav>
+
+
+    <section id="home" class="seccion">
+        <div class="rectangulohome">
+            <div class="contenidohome">
+                <h1>Servicio Técnico para PC</h1>
+                <p>
+                    ¿Tu PC tiene problemas de rendimiento y no sabes qué puede ser la causa del problema?
+                    <br><br>
+                    Este es el sitio perfecto, ya que en BECRUX nos encargamos de revisar y hacerle una mantención
+                    completa a tu PC.
+                    <br><br>
+                    De esta manera alargarás la vida útil y siempre podrás usarlo al máximo rendimiento.
+                </p>
+                <a href="cotizacion.html"><button>Cotiza con nosotros</button></a>
+            </div>
+            <div class="imagenhome">
+                <img src="https://pillan.inf.uct.cl/~eescares/DesWeb/Proyecto/Entrega1/prodesweb/img/pc1.png"
+                    alt="imagen de un pc">
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <include src="footer.html"></include>
+    </footer>
+    <script src="js/Funciones.js"></script>
+</body>
+
+</html>
