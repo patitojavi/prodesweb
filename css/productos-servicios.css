@@ -1,30 +1,33 @@
-
+/* Estilos para la sección "productos-servicios" */
 #productos-servicios {
-    text-align: center; 
+    text-align: center; /* Centrar el contenido de la sección horizontalmente */
     padding: 40px;
-    background-color: #292929;
+    background-color: #292929; /* Fondo gris claro */
 }
 
 #productos-servicios h1 {
     font-size: 36px;
-    color: #ffffff;
+    color: #ffffff; /* Color del título */
     margin-bottom: 20px;
 }
 
+/* Centrar la tabla */
 table {
-    margin: 0 auto;
+    margin: 0 auto; /* Centrar horizontalmente la tabla */
 }
 
 .categoria {
+    text-align: center; /* Centrar el contenido de las celdas horizontalmente */
     border: 2px solid #ccc;
     border-radius: 10px;
     padding: 20px;
-    transition: transform 0.3s ease; 
+    transition: transform 0.3s ease; /* Efecto de transformación al pasar el mouse */
 }
 
 .categoria:hover {
-    transform: scale(1.1); 
-    cursor: pointer; }
+    transform: scale(1.1); /* Aumenta ligeramente el tamaño al pasar el mouse */
+    cursor: pointer; /* Cambia el cursor al pasar el mouse */
+}
 
 .categoria img {
     height: auto;

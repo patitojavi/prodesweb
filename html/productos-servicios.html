@@ -1,24 +1,17 @@
 <!DOCTYPE html>
 <html lang="es">
-
 <head>
-
-
+    <meta charset="UTF-8">
     <link rel="stylesheet" type="text/css" href="/css/styles.css">
-</head>
-
-<body>
     <link rel="stylesheet" type="text/css" href="/css/productos-servicios.css">
     <script src="/js/Funciones.js"></script>
-
+</head>
+<body>
     <nav class="navegacion">
         <ul class="menu">
-            <li class="logo"><a href="home.html"><img
-                        src="https://pillan.inf.uct.cl/~eescares/DesWeb/Proyecto/Entrega1/prodesweb/img/becrux.png"
-                        alt="Logo de la empresa"></a></li>
+            <li class="logo"><a href="home.html"><img src="https://pillan.inf.uct.cl/~eescares/DesWeb/Proyecto/Entrega1/prodesweb/img/becrux.png" alt="Logo de la empresa"></a></li>
             <li><a href="home.html" onclick="mostrarSeccion('home')">Home</a></li>
-            <li><a href="productos-servicios.html" onclick="mostrarSeccion('productos-servicios')">Productos y Servicios</a>
-            </li>
+            <li><a href="productos-servicios.html" onclick="mostrarSeccion('productos-servicios')">Productos y Servicios</a></li>
             <li><a href="quienes-somos.html" onclick="mostrarSeccion('quienes-somos')">Quienes Somos</a>
                 <ul class="submenu">
                     <li><a href="historia.html" onclick="mostrarSeccion('historia')">Historia</a></li>
@@ -29,31 +22,22 @@
         </ul>
     </nav>
 
-
-
     <section id="productos-servicios" class="seccion">
-
         <h1>Productos y Servicios</h1>
         <table>
             <tr>
                 <!-- Categoría 1: Mantención de PC -->
-                <td class="categoria" onclick="irACategoria('pc')" onmouseover="animacionMouseOver(this)"
-                    onmouseout="animacionMouseOut(this)">
-                    <img src="https://pillan.inf.uct.cl/~eescares/DesWeb/Proyecto/Entrega1/prodesweb/img/pcEscritorio.png"
-                        alt="Mantención de PC">
+                <td class="categoria" onclick="irACategoria('pc')" onmouseover="animacionMouseOver(this)" onmouseout="animacionMouseOut(this)">
+                    <img src="https://pillan.inf.uct.cl/~eescares/DesWeb/Proyecto/Entrega1/prodesweb/img/pcEscritorio.png" alt="Mantención de PC">
                     <p>Mantención de PC</p>
                 </td>
                 <!-- Categoría 2: Mantención de Notebook -->
-                <td class="categoria" onclick="irACategoria('notebook')" onmouseover="animacionMouseOver(this)"
-                    onmouseout="animacionMouseOut(this)">
-                    <img src="https://pillan.inf.uct.cl/~eescares/DesWeb/Proyecto/Entrega1/prodesweb/img/notebook.png"
-                        alt="Mantención de Notebook">
+                <td class="categoria" onclick="irACategoria('notebook')" onmouseover="animacionMouseOver(this)" onmouseout="animacionMouseOut(this)">
+                    <img src="https://pillan.inf.uct.cl/~eescares/DesWeb/Proyecto/Entrega1/prodesweb/img/notebook.png" alt="Mantención de Notebook">
                     <p>Mantención de Notebook</p>
                 </td>
             </tr>
         </table>
     </section>
-
 </body>
-
 </html>
