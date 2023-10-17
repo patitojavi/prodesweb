@@ -32,28 +32,19 @@ document.addEventListener("DOMContentLoaded", function () {
         document.getElementById(seccion).style.display = 'block';
     }
 
+    // Agregar un evento de clic a cada enlace de navegación
+    enlacesNavegacion.forEach(function(enlace) {
+        enlace.addEventListener('click', function (event) {
+            event.preventDefault(); // Prevenir el comportamiento predeterminado del enlace
+
+            // Obtener el valor del atributo "data-seccion" del enlace para identificar la sección
+            const seccion = enlace.getAttribute('data-seccion');
+
+            // Llamar a la función para mostrar la sección
+            mostrarSeccion(seccion);
+        });
+    });
+
     // Mostrar la sección "Home" por defecto al cargar la página
     mostrarSeccion('home');
 });
-
-function irACategoria(categoria) {
-    // Aquí puedes redirigir al usuario a la página correspondiente a la categoría
-    // Por ejemplo, puedes usar window.location.href = 'ruta-de-la-pagina.html';
-    // Reemplaza 'ruta-de-la-pagina.html' por la URL de la página de la categoría.
-  
-    // Ejemplo de redirección ficticia (reemplaza esto con tu lógica real):
-    if (categoria === 'pc') {
-        window.location.href = 'mantencion-pc.html';
-    } else if (categoria === 'notebook') {
-        window.location.href = 'mantencion-notebook.html';
-    }
-}
-
-function animacionMouseOver(elemento) {
-    elemento.style.transform = 'scale(1.1)'; // Aplicar escala al pasar el mouse sobre el elemento
-}
-
-function animacionMouseOut(elemento) {
-    elemento.style.transform = 'scale(1)'; // Restaurar la escala original al salir del elemento con el mouse
-}
-

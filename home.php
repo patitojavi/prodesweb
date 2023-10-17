@@ -14,7 +14,7 @@ include 'backend/conex.inc.php';
     <link rel="stylesheet" type="text/css" href="css/styles.css">
 </head>
 <body>
-    <script src="js/Funciones.js"></script>
+    <script src="/js/Funciones.js"></script>
     <nav class="navegacion">
         <ul class="menu">
             <li class="logo"><a href="home.html"><img src="https://pillan.inf.uct.cl/~eescares/DesWeb/Proyecto/Entrega1/prodesweb/img/becrux.png" alt="Logo de la empresa"></a></li>
