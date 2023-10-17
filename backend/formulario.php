@@ -1,10 +1,9 @@
 <?php
 // se llama a la conexion de la base de datos
-include 'conex.inc';
+include 'conex.inc.php';
 
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
-    $nombre_apellido = $_POST["nombre"];
-    list($nombre, $apellido) = explode(' ', $nombre_apellido, 2); // Separar en dos partes el nombre y apellido
+    $nombre = $_POST["nombre"];
     $email = $_POST["email"];
     $mensaje = $_POST["mensaje"];
 
