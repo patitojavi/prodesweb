@@ -1,6 +1,6 @@
 <?php
-    include("conexion.php");
-?>
+ include 'conex.inc'
+>?
 
 
 document.addEventListener("DOMContentLoaded", function () {
