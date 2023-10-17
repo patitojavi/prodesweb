@@ -1,26 +1,38 @@
+
 #productos-servicios {
-    text-align: center; /* Centrar el contenido de la sección horizontalmente */
+    text-align: center; 
     padding: 40px;
-    background-color: #000000; /* Fondo gris claro */
+    background-color: #292929;
 }
 
 #productos-servicios h1 {
     font-size: 36px;
-    color: #ffffff; /* Color del título */
+    color: #ffffff;
     margin-bottom: 20px;
 }
 
-/* Centrar la tabla */
 table {
-    margin: 0 auto; /* Centrar horizontalmente la tabla */
+    margin: 0 auto;
 }
 
 .categoria {
-    text-align: center; /* Centrar el contenido de las celdas horizontalmente */
     border: 2px solid #ccc;
     border-radius: 10px;
     padding: 20px;
-    transition: transform 0.3s ease; /* Efecto de transformación al pasar el mouse */
-    display: inline-block; /* Asegura que las categorías estén en línea */
-    margin: 10px; /* Agrega un poco de margen entre las categorías */
+    transition: transform 0.3s ease; 
+}
+
+.categoria:hover {
+    transform: scale(1.1); 
+    cursor: pointer; }
+
+.categoria img {
+    height: auto;
+    border-radius: 10px;
+}
+
+.categoria p {
+    font-size: 18px;
+    color: #ffffff;
+    margin-top: 10px;
 }
