@@ -1,25 +1,41 @@
-/* Estilos para la sección "quienes-somos" */
-#quienes-somos {
-    text-align: left;
+/* Estilos para la sección "productos-servicios" */
+#productos-servicios {
+    text-align: center; /* Centrar el contenido de la sección horizontalmente */
     padding: 40px;
-    background-color: #020202;
-    color: #ffffff;
+    background-color: #292929; /* Fondo gris claro */
 }
 
-#quienes-somos h1 {
+#productos-servicios h1 {
     font-size: 36px;
-    color: #c300ff;
+    color: #ffffff; /* Color del título */
     margin-bottom: 20px;
 }
 
-#quienes-somos h2 {
-    font-size: 36px;
-    color: #c300ff;
-    margin-bottom: 20px;
+/* Centrar la tabla */
+table {
+    margin: 0 auto; /* Centrar horizontalmente la tabla */
 }
 
-#quienes-somos p {
+.categoria {
+    text-align: center; /* Centrar el contenido de las celdas horizontalmente */
+    border: 2px solid #ccc;
+    border-radius: 10px;
+    padding: 20px;
+    transition: transform 0.3s ease; /* Efecto de transformación al pasar el mouse */
+}
+
+.categoria:hover {
+    transform: scale(1.1); /* Aumenta ligeramente el tamaño al pasar el mouse */
+    cursor: pointer; /* Cambia el cursor al pasar el mouse */
+}
+
+.categoria img {
+    height: auto;
+    border-radius: 10px;
+}
+
+.categoria p {
     font-size: 18px;
-    margin-top: 20px;
-    text-align: justify;
+    color: #ffffff;
+    margin-top: 10px;
 }
