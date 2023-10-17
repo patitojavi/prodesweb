@@ -7,27 +7,6 @@
 
 #productos-servicios h1 {
     font-size: 36px;
-    color: #ffffff; /* Color del título */
-    margin-bottom: 20px;
-}
-
-/* Centrar la tabla */
-table {
-    margin: 0 auto; /* Centrar horizontalmente la tabla */
-}
-
-.categoria {
-    text-align: center; /* Centrar el contenido de las celdas horizontalmente */
-    border: 2px solid #ccc;
-    border-radius: 10px;
-    padding: 20px;
-    transition: transform 0.3s ease; /* Efecto de transformación al pasar el mouse */
-}
-
-.categoria:hover {
-    transform: scale(1.1); /* Aumenta ligeramente el tamaño al pasar el mouse */
-    cursor: pointer; /* Cambia el cursor al pasar el mouse */
-}
     color: #ffffff;
     margin-bottom: 20px;
 }
