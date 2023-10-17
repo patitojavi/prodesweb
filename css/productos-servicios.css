@@ -1,25 +1,26 @@
-/* Estilos para la sección "quienes-somos" */
-#quienes-somos {
-    text-align: left;
+#productos-servicios {
+    text-align: center; /* Centrar el contenido de la sección horizontalmente */
     padding: 40px;
-    background-color: #020202;
-    color: #ffffff;
+    background-color: #000000; /* Fondo gris claro */
 }
 
-#quienes-somos h1 {
+#productos-servicios h1 {
     font-size: 36px;
-    color: #c300ff;
+    color: #ffffff; /* Color del título */
     margin-bottom: 20px;
 }
 
-#quienes-somos h2 {
-    font-size: 36px;
-    color: #c300ff;
-    margin-bottom: 20px;
+/* Centrar la tabla */
+table {
+    margin: 0 auto; /* Centrar horizontalmente la tabla */
 }
 
-#quienes-somos p {
-    font-size: 18px;
-    margin-top: 20px;
-    text-align: justify;
+.categoria {
+    text-align: center; /* Centrar el contenido de las celdas horizontalmente */
+    border: 2px solid #ccc;
+    border-radius: 10px;
+    padding: 20px;
+    transition: transform 0.3s ease; /* Efecto de transformación al pasar el mouse */
+    display: inline-block; /* Asegura que las categorías estén en línea */
+    margin: 10px; /* Agrega un poco de margen entre las categorías */
 }
