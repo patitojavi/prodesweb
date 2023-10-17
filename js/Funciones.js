@@ -1,7 +1,3 @@
-<?php
- include 'conex.inc'
->?
-
 
 document.addEventListener("DOMContentLoaded", function () {
     // Obtener el botón "Enviar" por su id
