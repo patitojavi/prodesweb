@@ -1,14 +1,9 @@
 <!DOCTYPE html>
 <html lang="es">
-
 <head>
-
-
     <link rel="stylesheet" type="text/css" href="css/styles.css">
 </head>
-
 <body>
-    <script src="/js/Funciones.js"></script>
 
     <nav class="navegacion">
         <ul class="menu">
@@ -27,32 +22,13 @@
             <li><a href="contacto.html" onclick="mostrarSeccion('contacto')">Contacto</a></li>
         </ul>
     </nav>
-
-
-
-    <section id="productos-servicios" class="seccion">
-
-        <h1>Productos y Servicios</h1>
-        <table>
-            <tr>
-                <!-- CategorÃ­a 1: MantenciÃ³n de PC -->
-                <td class="categoria" onclick="irACategoria('pc')" onmouseover="animacionMouseOver(this)"
-                    onmouseout="animacionMouseOut(this)">
-                    <img src="https://pillan.inf.uct.cl/~eescares/DesWeb/Proyecto/Entrega1/prodesweb/img/pcEscritorio.png"
-                        alt="MantenciÃ³n de PC">
-                    <p>MantenciÃ³n de PC</p>
-                </td>
-                <!-- CategorÃ­a 2: MantenciÃ³n de Notebook -->
-                <td class="categoria" onclick="irACategoria('notebook')" onmouseover="animacionMouseOver(this)"
-                    onmouseout="animacionMouseOut(this)">
-                    <img src="https://pillan.inf.uct.cl/~eescares/DesWeb/Proyecto/Entrega1/prodesweb/img/notebook.png"
-                        alt="MantenciÃ³n de Notebook">
-                    <p>MantenciÃ³n de Notebook</p>
-                </td>
-            </tr>
-        </table>
+    
+    <section id="mantencion-pc" class="seccion">
+        <h1>Mantención de PC</h1>
+        <div id="content"></div>
     </section>
-
+    
+    <script src="js/Funciones.js"></script>
+    <script src="js/mantencion-pc.js"></script>
 </body>
-
 </html>

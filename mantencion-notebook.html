@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <link rel="stylesheet" type="text/css" href="css/styles.css">
+</head>
+<body>
+  
+    <nav class="navegacion">
+        <ul class="menu">
+            <li class="logo"><a href="home.html"><img
+                        src="https://pillan.inf.uct.cl/~eescares/DesWeb/Proyecto/Entrega1/prodesweb/img/becrux.png"
+                        alt="Logo de la empresa"></a></li>
+            <li><a href="home.html" onclick="mostrarSeccion('home')">Home</a></li>
+            <li><a href="productos-servicios.html" onclick="mostrarSeccion('productos-servicios')">Productos y Servicios</a>
+            </li>
+            <li><a href="quienes-somos.html" onclick="mostrarSeccion('quienes-somos')">Quienes Somos</a>
+                <ul class="submenu">
+                    <li><a href="historia.html" onclick="mostrarSeccion('historia')">Historia</a></li>
+                    <li><a href="nuestro-equipo.html" onclick="mostrarSeccion('nuestro-equipo')">Nuestro Equipo</a></li>
+                </ul>
+            </li>
+            <li><a href="contacto.html" onclick="mostrarSeccion('contacto')">Contacto</a></li>
+        </ul>
+    </nav>
+    
+    <section id="mantencion-notebook" class="seccion">
+        <h1>Mantención de Notebook</h1>
+        <div id="content"></div>
+    </section>
+    
+    <script src="js/Funciones.js"></script>
+    <script src="js/mantencion-notebook.js"></script>
+</body>
+</html>
