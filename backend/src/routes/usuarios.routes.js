@@ -5,6 +5,7 @@ import { getUsuarios, createUsuarios, updateUsuarios, deleteUsuarios, getUsuario
 
 const router = Router();
 
+
 router.get('/usuarios', getUsuarios)
 //const sql = 'SELECT * FROM usuarios'
 

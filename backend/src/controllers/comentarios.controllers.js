@@ -1,6 +1,5 @@
 import { pool } from '../config/bd.js';
 
-// Obtener todos los comentarios
 export const getComentarios = async (req, res) => {
     try {
         const [rows] = await pool.query('SELECT * FROM Comentarios');
@@ -61,3 +60,4 @@ export const updateComentario = async (req, res) => {
         res.status(500).json({ message: "Error al actualizar el comentario" });
     }
 }
+
