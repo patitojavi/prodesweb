@@ -4,7 +4,7 @@ const express = require('express');
 const mysql = require('mysql2');
 
 const app = express();
-export const PORT = 3000;
+
 
 const db = mysql.createConnection({
   host: process.env.DB_HOST,
