@@ -1,16 +1,17 @@
-import { pool } from '../config/bd.js'
+import { pool } from '../config/config.js'
 
 
 // Obtener todos los usuarios
 export const getUsuarios = async (req, res) => {
     try {
-        const [rows] = await pool.query('SELECT ID, Nombre, Apellido, Correo, Contraseña, rol FROM Usuario');
+        const [rows] =  await pool.query('SELECT ID, Nombre, Apellido, Correo, Contraseña, rol FROM Usuario');
         res.json(rows);
     } catch (error) {
         console.error('Error al obtener los usuarios:', error);
         res.status(500).json({ message: "Error al obtener los usuarios" });
     }
 }
+
 
 // Obtener un usuario por su ID
 export const getUsuario = async (req, res) => {

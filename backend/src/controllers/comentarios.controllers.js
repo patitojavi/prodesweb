@@ -1,4 +1,5 @@
-import { pool } from '../config/bd.js';
+import { pool } from '../config/config.js'
+
 
 export const getComentarios = async (req, res) => {
     try {
@@ -60,4 +61,3 @@ export const updateComentario = async (req, res) => {
         res.status(500).json({ message: "Error al actualizar el comentario" });
     }
 }
-
